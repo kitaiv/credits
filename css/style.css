@@ -1,0 +1,230 @@
+body {
+    padding: 0 15% 0 15%;
+    background:#F0FFF0;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h5 h2 h4 h1 a p span {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+
+.decor {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    outline: none !important;
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 18px;
+    font-family: gotham-bold;
+    text-align: center;
+    background: #474747;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px #bfbfbf;
+    margin: 10px 0 30px;
+    padding: 15px;
+    color: #fff;
+}
+
+.green {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 14px;
+    line-height: 1.42857143;
+    font-family: gotham-regular, arial, sans-serif;
+    box-sizing: border-box;
+    outline: none !important;
+    background: #5cb87c;
+    padding: 15px 0;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+
+
+.green::after {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+}
+
+.triangle {
+    margin-top: -2%;
+    width: 10em;
+    height: 4em;
+    clip-path: polygon(80% 0, 40% 80%, 0 0);
+    background:  #5cb87c;
+}
+
+.green>div>div>div:nth-child(2):before {
+    content: "\f138";
+    position: absolute;
+    color: #fff;
+    right: -12px;
+    top: calc(50% - 20px);
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 2em;
+}
+
+.green>div>div>div:nth-child(1):before {
+    content: "\f138";
+    position: absolute;
+    color: #fff;
+    right: -12px;
+    top: calc(50% - 20px);
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 2em;
+}
+
+
+.list-item{
+    margin-bottom: 2%;
+    line-height: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#upbutton {
+    background: url("../img/up-arrow.png") no-repeat top left;
+    height: 60px;
+    width: 60px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+}
+
+.scrollspy-example {
+    position: relative;
+    height: 450px;
+    margin-top: .5rem;
+    overflow: auto;
+}
+
+footer{
+    margin-top: 10%;
+}  
+@media (min-width: 2560px){
+    .triangle{
+        margin-top: -0.5%;
+    }
+}
+
+@media (max-width: 646px){
+    body{
+        padding: 0% 0% 0% 0% !important;
+    }
+}
+
+@media( max-width: 426px){
+    .green>div>div>div:nth-child(2):before {
+        content: "\f138";
+
+        display: none;
+    }
+    
+    .green>div>div>div:nth-child(1):before {
+        content: "\f138";
+        display:none;
+    }
+
+
+    .licenseBlock__item{
+        margin: 0 !important;
+        margin-top: 3% !important;
+    }
+    
+    .licenseBlock__inner{
+        margin: 0 !important;
+        
+    }
+
+    #upbutton{
+        display: none !important;
+    }
+
+    .list-group a{
+        font-size: 10px;
+    }
+
+    .scrollspy-example p{
+        font-size: 12px;
+    }
+
+    .scrollspy-example h4{
+        font-size: 18px;
+    }
+
+    .list-group li{
+        font-size: 12px;
+    }
+
+    .bg-danger p{
+        font-size: 12px;
+    }
+
+    .bg-secondary p{
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 376px){
+    .navbar-brand{
+        margin-left: 10%;
+    }
+
+    footer{
+        margin-top: 25%;
+    }
+
+    .list-group a{
+        font-size: 10px;
+    }
+
+    .scrollspy-example p{
+        font-size: 12px;
+    }
+
+    .scrollspy-example h4{
+        font-size: 18px;
+    }
+
+    .list-group li{
+        font-size: 12px;
+    }
+
+    .bg-danger p{
+        font-size: 12px;
+    }
+
+    .bg-secondary p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px){
+    .navbar-brand{
+        margin-left: 5%;
+    }
+}
+
